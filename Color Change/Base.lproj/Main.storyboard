@@ -21,7 +21,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4F6-OV-3Nd">
                                         <rect key="frame" x="0.0" y="0.0" width="396" height="127.66666666666667"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="127.67" id="4vy-Oo-fz9"/>
                                         </constraints>
@@ -58,20 +58,20 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5dW-0v-SoS">
                                                 <rect key="frame" x="63" y="4.6666666666666572" width="45" height="101"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naG-CX-EDV">
-                                                        <rect key="frame" x="17.333333333333329" y="0.0" width="10.333333333333336" height="20.333333333333332"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naG-CX-EDV">
+                                                        <rect key="frame" x="5.3333333333333286" y="0.0" width="34.333333333333336" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5A-ge-KIW">
-                                                        <rect key="frame" x="17.333333333333329" y="40.333333333333371" width="10.333333333333336" height="20.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5A-ge-KIW">
+                                                        <rect key="frame" x="5.3333333333333286" y="40.333333333333371" width="34.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrb-QS-zmO">
-                                                        <rect key="frame" x="17.333333333333329" y="80.666666666666686" width="10.333333333333336" height="20.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrb-QS-zmO">
+                                                        <rect key="frame" x="5.3333333333333286" y="80.666666666666686" width="34.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -89,9 +89,7 @@
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemGrayColor"/>
                                                         <connections>
-                                                            <action selector="redColorChange" destination="BYZ-38-t0r" eventType="valueChanged" id="kEt-wA-seH"/>
-                                                            <action selector="redColorChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="MOq-4G-9r0"/>
-                                                            <action selector="redValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="bzu-E1-NcQ"/>
+                                                            <action selector="redValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="sNs-pd-ZvY"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="02M-TP-FT2">
@@ -99,8 +97,7 @@
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemGrayColor"/>
                                                         <connections>
-                                                            <action selector="greenColorChange" destination="BYZ-38-t0r" eventType="valueChanged" id="HS8-F8-fx2"/>
-                                                            <action selector="greenColorChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="bWg-2P-WOv"/>
+                                                            <action selector="greenValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="0UN-Yj-Sue"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-80-0av">
@@ -108,8 +105,7 @@
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemGrayColor"/>
                                                         <connections>
-                                                            <action selector="blueColorChange" destination="BYZ-38-t0r" eventType="valueChanged" id="25G-nM-C1d"/>
-                                                            <action selector="blueColorChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="3xi-Bq-c6c"/>
+                                                            <action selector="blueValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="y6L-XW-l8f"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -143,8 +139,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
